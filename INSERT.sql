@@ -2,10 +2,7 @@ INSERT INTO  Genre(name) VALUES
 	('Рок'),
 	('Поп'),
 	('Хип-хоп'),
-	('Джаз')
-
-SELECT * FROM Genre
-
+	('Джаз');
 
 INSERT INTO  Artist(name) VALUES 
 	('Queen'),
@@ -13,9 +10,7 @@ INSERT INTO  Artist(name) VALUES
 	('Taylor Swift'),
 	('Eminem'),
 	('Louis Armstrong'),
-	('Nirvana')
-	
-SELECT * FROM Artist
+	('Nirvana');
 
 INSERT INTO  ArtistsInGenre(genre_id, artist_id) VALUES 
 	(1, 1),
@@ -25,9 +20,7 @@ INSERT INTO  ArtistsInGenre(genre_id, artist_id) VALUES
 	(4, 5),
 	(1, 6),
 	(2, 1),
-	(3, 2)
-	
-SELECT * FROM ArtistsInGenre
+	(3, 2);
 
 INSERT INTO  Album(name, year) VALUES 
 	('A Night at the Opera', 1975),
@@ -38,9 +31,7 @@ INSERT INTO  Album(name, year) VALUES
 	('Nevermind', 1991),
 	('Folklore', 2020),
 	('Music to Be Murdered By', 2020),
-	('The Slim Shady LP', 1999)
-	
-SELECT * FROM Album
+	('The Slim Shady LP', 1999);
 
 INSERT INTO  AlbumsArtists(album_id, artist_id) VALUES 
 	(1, 1),
@@ -53,9 +44,7 @@ INSERT INTO  AlbumsArtists(album_id, artist_id) VALUES
 	(8, 4),
 	(1, 6),
 	(2, 4),
-	(9, 4)
-	
-SELECT * FROM AlbumsArtists
+	(9, 4);
 	
 INSERT INTO  Tracks(name, duration, album_id) VALUES 
 	('Bohemian Rhapsody', 355, 1),
@@ -72,9 +61,7 @@ INSERT INTO  Tracks(name, duration, album_id) VALUES
 	('My Tears Ricochet', 255, 7),
 	('This is my world now', 240, 8),
 	('Godzilla', 221, 8),
-	('My Name is', 268, 9)
-	
-SELECT * FROM Tracks
+	('My Name is', 268, 9);
 
 INSERT INTO  Collection(name, year) VALUES 
 	('Greatest Rock Hits', 2018),
@@ -82,9 +69,7 @@ INSERT INTO  Collection(name, year) VALUES
 	('Hip-Hop Anthems', 2020),
 	('Golden Oldies', 2021),
 	('My Favorite Tracks', 2017),
-	('Best of 2020', 2022)
-	
-SELECT * FROM Collection
+	('Best of 2020', 2022);
 
 INSERT INTO  CollectionTracks(collection_id, track_id) VALUES 
 	(1, 1),
@@ -103,6 +88,5 @@ INSERT INTO  CollectionTracks(collection_id, track_id) VALUES
 	(6, 14),
 	(1, 3),
 	(2, 4),
-	(5, 15)
+	(5, 15);
 	
-SELECT * FROM CollectionTracks

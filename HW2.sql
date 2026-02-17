@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Collection (
 CREATE TABLE IF NOT EXISTS Tracks (
 	track_id SERIAL PRIMARY KEY,
 	name VARCHAR(60) NOT NULL,
-	duration TIME NOT NULL,
+	duration INTEGER NOT NULL,
 	album_id INTEGER NOT NULL REFERENCES Album(album_id)
 );
 
